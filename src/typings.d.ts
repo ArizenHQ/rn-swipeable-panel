@@ -68,6 +68,11 @@ declare interface SwipeablePanelProps extends React.Props<SwipeablePanel> {
   noBar?: boolean;
 
   /**
+   * Use this prop to activate or desactivate pan gesture on panel
+   */
+  panGestureActivated?: boolean;
+
+  /**
    * Use this prop to override bar style
    */
   barStyle?: object;

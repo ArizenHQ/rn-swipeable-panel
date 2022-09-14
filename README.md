@@ -90,6 +90,7 @@ export default App = () => {
 | **closeOnTouchOutside** | `bool`     | Set true if you want to close panel by touching outside     | `false` |
 | **allowTouchOutside**   | `bool`     | Set true if you want to make toucable outside of panel      | `false` |
 | **noBar**               | `bool`     | Set true if you want to remove gray bar                     | `false` |
+| **panGestureActivated** | `bool`     | Use this prop to activate/desactivate pan gesture on panel  | `true`  |
 | **scrollViewProps**     | `Object`   | Use this prop to override scroll view that inside the panel | `{}`    |
 
 #### ⭐️ Show Your Support

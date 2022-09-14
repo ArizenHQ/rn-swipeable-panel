@@ -39,6 +39,7 @@ type SwipeablePanelProps = {
   openLarge?: boolean;
   smallPanelHeight?: number;
   noBar?: boolean;
+  panGestureActivated?: boolean;
   barStyle?: object;
   barContainerStyle?: object,
   allowTouchOutside?: boolean;
@@ -85,7 +86,7 @@ class SwipeablePanel extends Component<SwipeablePanelProps, SwipeablePanelState>
     this.animatedValueY = 0;
 
     this._panResponder = PanResponder.create({
-      onStartShouldSetPanResponder: (evt, gestureState) => true,
+      onStartShouldSetPanResponder: (evt, gestureState) => props.panGestureActivated ?? true,
       onPanResponderGrant: (evt, gestureState) => {
         this.state.pan.setOffset({
           x: 0,
